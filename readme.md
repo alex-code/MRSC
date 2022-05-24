@@ -89,9 +89,10 @@ If you need to change an existing servo.
 
 Servos can be mounted with which ever method suits you best but I've included some STL files that can be used to 3D print underside and topside servo mounts (underside needs a 10mm hole for the shaft).
 
-:warning: I model in N Gauge so they're sized for that, if you plan on using them for OO/HO they may need tweaking :warning:
+| :warning: | I model in N Gauge so they're sized for that, if you plan on using them for OO/HO they may need tweaking | :warning: |
+|--|--|--|
 
-![Topside mount](imgs\topside-1.webp)
-![Topside mount](imgs\topside-2.webp)
-![Underside mount](imgs\underside-1.webp)
-![Underside mount](imgs\underside-2.webp)
+![Topside mount](imgs/topside-1.webp)
+![Topside mount](imgs/topside-2.webp)
+![Underside mount](imgs/underside-1.webp)
+![Underside mount](imgs/underside-2.webp)

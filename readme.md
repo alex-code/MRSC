@@ -2,10 +2,12 @@
 
 Control points, semaphore signals and other accessories using servos.
 
+A demo video can be found here, https://www.youtube.com/watch?v=__FOfBjZpas
+
 | :warning: | I'm a C++ hobbyist (Not a pro) and this is a personal project I've shared that will require some tinkering knowledge. While this has worked for me results may vary and you might need to modify the code.| :warning: |
 |--|--|--|
 
-| :information_source: | This was developed using Visual Studio Code and PlatformIO but should be Arduino IDE compatible | :information_source: |
+| :information_source: | This was developed using Visual Studio Code and PlatformIO but should be Arduino IDE compatible. | :information_source: |
 |--|--|--|
 
 There's 4 types that have different options
@@ -39,6 +41,8 @@ The MCP23017 expanders are set to input pullups so switches need connecting to G
 Unless your boards have DIP switches to change the I2C addresses you'll need to do a bit of soldering.
 
 The boards can then be chained with the SDA & SCL pins on the Uno.
+
+![My setup](imgs/setup.webp)
 
 # Servo Numbering
 

@@ -444,7 +444,7 @@ void setup() {
   
   for (uint8_t c = 0; c < BOARD_COUNT; c++) {
     // Setup the MCP23017 & PCA9685 boards
-    if (detect(MCP_ADDRESSES[c]) && detect(PCA_ADDRESSES[c])) {
+    if (detect(MCP23017_ADDRESS | MCP_ADDRESSES[c]) && detect(PCA_ADDRESSES[c])) {
       #if __cplusplus >= 201402L
       boards[c] = {
         Switches::initialize(MCP_ADDRESSES[c]),

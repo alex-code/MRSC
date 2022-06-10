@@ -76,7 +76,13 @@ namespace Keypad {
     uint16_t adc;
 
     do {
-      adc = analogRead(KEYPAD_PIN);
+      adc = 0;
+      for (uint8_t i = 0; i < 5; i++) {
+        adc += analogRead(KEYPAD_PIN);
+        delay(5);
+      }
+      adc /= 5;
+
       if (adc < 50) {
         key = Key::RIGHT;
       } else if (adc < 250) {
@@ -85,7 +91,7 @@ namespace Keypad {
         key = Key::DOWN;
       } else if (adc < 650) {
         key = Key::LEFT;
-      } else if (adc < 850) {
+      } else if (adc > 800 && adc < 850) {
         key = Key::SELECT;
       }
     } while (blocking && adc < 1000);
